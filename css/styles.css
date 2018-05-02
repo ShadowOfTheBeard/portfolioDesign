@@ -82,6 +82,7 @@ img.logo {
 #hiddenDrawer.open{
   display:list-item;
 }
+
 .hiddenNav {
   overflow: hidden;
   right: 0;
@@ -232,12 +233,8 @@ footer {
     text-align: right;
   }
 
-  .hiddenNav {
-    display: none;
-  }
-
-  .hiddenNav.open {
-    display: none;
+  #hiddenDrawer.open{
+    display:none;
   }
 
   .hamburger {
