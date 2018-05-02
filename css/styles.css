@@ -1,0 +1,334 @@
+h1,h2,h3 {
+  color: #2d3c49;
+  width: 100%;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 5px;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+hr {
+  width: 95%;
+  border: 1px ridge #7d97ad;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  max-width: 1000px;
+  min-width: 310px;
+  margin: auto;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img.logo {
+  width: auto;
+  height: 50px;
+}
+
+.top {
+  width: 70%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top h2 {
+  display: none;
+}
+
+.hamburger {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #2d3c49;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#hiddenDrawer{
+  display:none;
+}
+
+#hiddenDrawer.open{
+  display:list-item;
+}
+.hiddenNav {
+  overflow: hidden;
+  right: 0;
+  flex-flow: wrap;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(300px);
+  transition:  0.3s ease;
+  }
+
+.hiddenBlur {
+  position: absolute;
+  background-color: white;
+  opacity: 0.85;
+
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='svgMask'><feGaussianBlur stdDeviation='10' /></filter></svg>#svgMask");
+}
+
+.hiddenNav.open {
+  right: 0;
+  display: list-item;
+  transform: translateX(0);
+  transition:  0.3s ease;
+}
+
+.hiddenNav__list {
+  padding: 0;
+  list-style-type:none;
+
+}
+.hiddenNav__list ul {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hiddenNav__item {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  padding: 5px 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hiddenNav__item a {
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+li a:hover {
+  background-color: #2d3c49;
+  color: white;
+
+}
+
+.hiddenNav__item a:active {
+  background-color: #2d3c49;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miniContainer {
+  width: 80%;
+  display: block;
+  order: 1;
+  margin: auto;
+}
+
+.bigImage {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-top: 15%;
+}
+
+.quote {
+  font-size: 30px;
+}
+
+.miniContainer2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  order: 0;
+}
+
+.miniContainer2 h3 {
+  text-align: center;
+  padding: 5px 5px 30px 5px;
+
+
+}
+
+.featuredWork {
+  margin: auto;
+}
+
+footer p {
+  font-size: 14px;
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+}
+
+@media screen and (min-width:400px) {
+
+  h1 {
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .top h2 {
+    display: inline-block;
+  }
+
+  .top {
+    display: block;
+    flex-wrap: wrap;
+    text-align: right;
+  }
+
+  .hiddenNav {
+    display: none;
+  }
+
+  .hiddenNav.open {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    height: 75px;
+  }
+
+  img.logo {
+    width: auto;
+    height: 75px;
+  }
+
+  .top {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width:700px) {
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img.logo {
+    width: auto;
+    height: 100px;
+  }
+
+  .miniContainer {
+    width: 50%;
+    display: inline-block;
+    margin: auto;
+    order: 0;
+  }
+
+  .miniContainer2 {
+    width: 40%;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:1000px) {
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .miniContainer {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: block;
+  }
+
+  .miniContainer2 {
+    width: 100%;
+    display: flex;
+  }
+
+  .quote br {
+    display: none;
+  }
+
+  .bigImage {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: auto;
+  }
+
+  .featuredWork {
+    display: block;
+    margin: auto;
+  }
+}
